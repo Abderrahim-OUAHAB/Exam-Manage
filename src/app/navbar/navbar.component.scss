@@ -1,0 +1,83 @@
+.navbar {
+    width: 100%;
+    background:linear-gradient(180deg,rgb(4, 5, 7),rgb(0, 19, 124));
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    z-index: 999;
+    position: fixed; /* Fixe la navbar en haut */
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optionnel : ajouter une ombre portée */
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+  
+    .navbar-header {
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        color: #fff;
+        padding: 10px;
+        img {
+          display: inline-block;
+          width: 40px;
+          margin-right: 8px;
+        }
+      }
+    }
+  
+    .navbar-menu {
+      .nav {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          margin: 0 10px;
+          
+          a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+            padding: 10px;
+            border-bottom: 1px solid transparent;
+  
+            &:hover {
+              color: gray;
+              border-bottom: 1px solid white;
+            }
+          }
+  
+          &.active {
+            a {
+              color:rgb(0, 19, 124);
+              background-color: lightblue;
+              box-shadow: 0px 5px 10px rgb(0 0 0 / 30%);
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+  
+      .username {
+        background-color: #2202b1e6;
+        padding: 7px 13px;
+        color: #fff;
+        border: 2px solid #ddd;
+        border-radius: 50px;
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 40%);
+      }
+    }
+  }
+  

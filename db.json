@@ -1,0 +1,106 @@
+{
+  "students": [
+    {
+      "username": "wahhab",
+      "email": "abderrahimouahab5@gmail.com",
+      "password": "wahhab",
+      "subjects": [
+        {
+          "name": "Math",
+          "id": "9a97",
+          "degree": 2
+        },
+        {
+          "name": "Math",
+          "id": "9a97",
+          "degree": 2
+        },
+        {
+          "name": "Math",
+          "id": "9a97",
+          "degree": 1
+        },
+        {
+          "name": "Anglais",
+          "id": "f950",
+          "degree": 0
+        }
+      ],
+      "id": "a4f8"
+    },
+    {
+      "id": "e77a",
+      "username": "med",
+      "email": "med@gmail.com",
+      "password": "med"
+    },
+    {
+      "id": "b63d",
+      "username": "bobo",
+      "email": "bobo@gmail.com",
+      "password": "b"
+    }
+  ],
+  "professors": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin"
+    }
+  ],
+  "login": [
+    {
+      "username": "admin",
+      "role": "professors",
+      "userId": "1",
+      "id": "1"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "9a97",
+      "name": "Math",
+      "questions": [
+        {
+          "question": "3+3",
+          "answer1": "2",
+          "answer2": "6",
+          "answer3": "11",
+          "answer4": "9",
+          "correctAnswer": "6"
+        },
+        {
+          "question": "5*8",
+          "answer1": "40",
+          "answer2": "50",
+          "answer3": "30",
+          "answer4": "60",
+          "correctAnswer": "40"
+        }
+      ]
+    },
+    {
+      "id": "f950",
+      "name": "Anglais",
+      "questions": [
+        {
+          "question": "jhow ",
+          "answer1": "zz",
+          "answer2": "z",
+          "answer3": "q",
+          "answer4": "qs",
+          "correctAnswer": "q"
+        },
+        {
+          "question": "zkldzae",
+          "answer1": "afa",
+          "answer2": "afa",
+          "answer3": "aefa",
+          "answer4": "faf",
+          "correctAnswer": "aefa"
+        }
+      ]
+    }
+  ]
+}

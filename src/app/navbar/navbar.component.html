@@ -1,0 +1,42 @@
+<mat-toolbar color="primary" class="navbar" dir="ltr">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" routerLinkActive="active" >
+          <img src="school_white_24dp.svg" alt="Logo">
+          EXAHHAB
+        </a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li routerLinkActive="active">
+            <a routerLink="/new-exam" *ngIf="user?.role=='professors'">Nouveau</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/students" *ngIf="user?.role=='professors'">Étudiants</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/subjects" *ngIf="user!==null">Matières</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/login" (click)="logout()" *ngIf="user!==null">Déconnexion</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/login" *ngIf="user==null">Connexion</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/register" *ngIf="user==null">Inscription</a>
+          </li>
+          <li class="username" *ngIf="user!==null">{{user?.username}}</li>
+          <li>
+            <button mat-icon-button (click)="toggleDarkMode()">
+              <mat-icon>{{ isDarkMode ? 'brightness_7' : 'brightness_4' }}</mat-icon>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </mat-toolbar>
+  

@@ -1,0 +1,39 @@
+
+
+/* You can add global styles to this file, and also import other style files */
+body {
+    padding: 0;
+    margin: 0!important;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  *{
+    font-family: 'Almarai', sans-serif;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Almarai', sans-serif!important; }
+
+*,div{
+  &.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  &.dark-mode {
+    background-color: rgba(0, 0, 0, 0.87);
+    color: #ffffff;
+    
+  }
+}
+
+.mat-toolbar {
+  &.light-mode {
+    background-color: #3f51b5;
+    color: white;
+  }
+
+  &.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+  }
+}
